@@ -1,13 +1,11 @@
 <?php
 namespace PhpNodeSocketIO\Platform\Resolver;
 
-use PhpNodeSocketIO\Platform\PlatformResolverInterface;
-
 /**
  * Class Unix
  * @package PhpNodeSocketIO\Platform\Resolver
  */
-class Unix implements PlatformResolverInterface {
+class Unix implements ResolverInterface {
 
 	/**
 	 * Should return true if current resolver can create console

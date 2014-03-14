@@ -3,7 +3,7 @@ namespace PhpNodeSocketIO;
 
 use PhpNodeSocketIO\Exception\InvalidConsoleException;
 use PhpNodeSocketIO\Exception\UndefinedPlatformException;
-use PhpNodeSocketIO\Platform\PlatformResolverInterface;
+use PhpNodeSocketIO\Platform\Resolver\ResolverInterface;
 
 /**
  * Class Platform
@@ -12,7 +12,7 @@ use PhpNodeSocketIO\Platform\PlatformResolverInterface;
 class Platform {
 
 	/**
-	 * @var PlatformResolverInterface[]
+	 * @var ResolverInterface[]
 	 */
 	private static $_availableResolvers = array();
 
@@ -22,9 +22,9 @@ class Platform {
 	private static $_console;
 
 	/**
-	 * @param PlatformResolverInterface $resolver
+	 * @param ResolverInterface $resolver
 	 */
-	public static function addResolver(PlatformResolverInterface $resolver) {
+	public static function addResolver(ResolverInterface $resolver) {
 		self::$_availableResolvers[] = $resolver;
 	}
 
