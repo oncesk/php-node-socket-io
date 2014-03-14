@@ -1,9 +1,9 @@
 <?php
-namespace PhpNodeSocketIO\console;
+namespace PhpNodeSocketIO\Console;
 
 /**
  * Class ConsoleInterface
- * @package PhpNodeSocketIO\console
+ * @package PhpNodeSocketIO\Console
  */
 interface ConsoleInterface {
 
