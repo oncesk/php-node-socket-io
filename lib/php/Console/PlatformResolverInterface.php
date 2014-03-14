@@ -8,9 +8,14 @@ namespace PhpNodeSocketIO\Console;
 interface PlatformResolverInterface {
 
 	/**
-	 * Should return platform which defined in Platform class
+	 * Should return true if current resolver can create console
 	 *
 	 * @return int const
 	 */
 	public function resolve();
+
+	/**
+	 * @return ConsoleInterface
+	 */
+	public function createConsole();
 }
