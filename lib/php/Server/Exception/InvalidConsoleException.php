@@ -1,8 +1,8 @@
 <?php
-namespace PhpNodeSocketIO\Exception;
+namespace PhpNodeSocketIO\Server\Exception;
 
 /**
  * Class InvalidConsoleException
- * @package PhpNodeSocketIO\Exception
+ * @package PhpNodeSocketIO\Server\Exception
  */
 class InvalidConsoleException extends \Exception {}

@@ -1,9 +1,9 @@
 <?php
-namespace PhpNodeSocketIO\Console;
+namespace PhpNodeSocketIO\Server\Console;
 
 /**
  * Class UnixConsole
- * @package PhpNodeSocketIO\Console
+ * @package PhpNodeSocketIO\Server\Console
  */
 class Unix implements ConsoleInterface {
 

@@ -1,9 +1,9 @@
 <?php
-namespace PhpNodeSocketIO\Platform\Resolver;
+namespace PhpNodeSocketIO\Server\Platform\Resolver;
 
 /**
  * Class Windows
- * @package PhpNodeSocketIO\Console\Resolver
+ * @package PhpNodeSocketIO\Server\Console\Resolver
  */
 class Windows implements ResolverInterface {
 
@@ -17,9 +17,9 @@ class Windows implements ResolverInterface {
 	}
 
 	/**
-	 * @return \PhpNodeSocketIO\Console\ConsoleInterface
+	 * @return \PhpNodeSocketIO\Server\Console\ConsoleInterface
 	 */
 	public function createConsole() {
-		return new \PhpNodeSocketIO\Console\Windows();
+		return new \PhpNodeSocketIO\Server\Console\Windows();
 	}
 }

@@ -1,9 +1,9 @@
 <?php
-namespace PhpNodeSocketIO\Platform\Resolver;
+namespace PhpNodeSocketIO\Server\Platform\Resolver;
 
 /**
  * Class Unix
- * @package PhpNodeSocketIO\Platform\Resolver
+ * @package PhpNodeSocketIO\Server\Platform\Resolver
  */
 class Unix implements ResolverInterface {
 
@@ -17,11 +17,9 @@ class Unix implements ResolverInterface {
 	}
 
 	/**
-	 * @return \PhpNodeSocketIO\Console\ConsoleInterface
+	 * @return \PhpNodeSocketIO\Server\Console\ConsoleInterface
 	 */
 	public function createConsole() {
-		return new \PhpNodeSocketIO\Console\Unix();
+		return new \PhpNodeSocketIO\Server\Console\Unix();
 	}
-
-
 }

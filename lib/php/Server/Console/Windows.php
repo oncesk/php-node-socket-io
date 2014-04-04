@@ -1,9 +1,9 @@
 <?php
-namespace PhpNodeSocketIO\Console;
+namespace PhpNodeSocketIO\Server\Console;
 
 /**
  * Class WinConsole
- * @package PhpNodeSocketIO\Console
+ * @package PhpNodeSocketIO\Server\Console
  */
 class Windows implements ConsoleInterface {
 

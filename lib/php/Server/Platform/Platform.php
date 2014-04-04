@@ -1,9 +1,9 @@
 <?php
-namespace PhpNodeSocketIO;
+namespace PhpNodeSocketIO\Server;
 
-use PhpNodeSocketIO\Exception\InvalidConsoleException;
-use PhpNodeSocketIO\Exception\UndefinedPlatformException;
-use PhpNodeSocketIO\Platform\Resolver\ResolverInterface;
+use PhpNodeSocketIO\Server\Exception\InvalidConsoleException;
+use PhpNodeSocketIO\Server\Exception\UndefinedPlatformException;
+use PhpNodeSocketIO\Server\Platform\Resolver\ResolverInterface;
 
 /**
  * Class Platform
@@ -31,8 +31,8 @@ class Platform {
 	/**
 	 * @return Console\ConsoleInterface
 	 *
-	 * @throws \PhpNodeSocketIO\Exception\InvalidConsoleException
-	 * @throws \PhpNodeSocketIO\Exception\UndefinedPlatformException
+	 * @throws \PhpNodeSocketIO\Server\Exception\InvalidConsoleException
+	 * @throws \PhpNodeSocketIO\Server\Exception\UndefinedPlatformException
 	 */
 	public static function getConsole() {
 		if (self::$_console) {
@@ -43,8 +43,8 @@ class Platform {
 
 	/**
 	 * @return Console\ConsoleInterface
-	 * @throws \PhpNodeSocketIO\Exception\InvalidConsoleException
-	 * @throws \PhpNodeSocketIO\Exception\UndefinedPlatformException
+	 * @throws \PhpNodeSocketIO\Server\Exception\InvalidConsoleException
+	 * @throws \PhpNodeSocketIO\Server\Exception\UndefinedPlatformException
 	 */
 	private static function _createConsole() {
 		foreach (self::$_availableResolvers as $resolver) {

@@ -1,9 +1,9 @@
 <?php
-namespace PhpNodeSocketIO\Platform\Resolver;
+namespace PhpNodeSocketIO\Server\Platform\Resolver;
 
 /**
  * Interface PlatformResolverInterface
- * @package PhpNodeSocketIO\Platform
+ * @package PhpNodeSocketIO\Server\Platform
  */
 interface ResolverInterface {
 
@@ -15,7 +15,7 @@ interface ResolverInterface {
 	public function resolve();
 
 	/**
-	 * @return \PhpNodeSocketIO\Console\ConsoleInterface
+	 * @return \PhpNodeSocketIO\Server\Console\ConsoleInterface
 	 */
 	public function createConsole();
 }
