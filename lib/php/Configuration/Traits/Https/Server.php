@@ -1,15 +1,15 @@
 <?php
-namespace PhpNodeSocketIO\Configuration\Secure;
+namespace PhpNodeSocketIO\Configuration\Traits\Https;
+
+use PhpNodeSocketIO\Configuration\Traits\Http\Server AS BaseServer;
 
 /**
- * Class Server
- *
- * @see http://nodejs.org/api/https.html
- * @see http://nodejs.org/api/tls.html#tls_tls_createserver_options_secureconnectionlistener
- *
- * @package PhpNodeSocketIO\Configuration\Secure
+ * Class Https
+ * @package PhpNodeSocketIO\Configuration\Traits
  */
-class Server {
+trait Server {
+
+	use BaseServer;
 
 	/**
 	 * @var array
@@ -36,6 +36,14 @@ class Server {
 	 * @var array
 	 */
 	private $options = array();
+
+	/**
+	 * @return bool
+	 */
+	public function isSecure() {
+		return true;
+	}
+
 
 	/**
 	 * @see http://nodejs.org/api/tls.html#tls_tls_createserver_options_secureconnectionlistener
